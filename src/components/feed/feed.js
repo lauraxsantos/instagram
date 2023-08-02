@@ -1,7 +1,6 @@
 import React from "react";
 import { SafeAreaView, FlatList, StyleSheet} from "react-native";
 import Post from "./post";
-import TabBar from "../tab-bar/tab-bar";
 import Stories from "../story/stories";
 
 const postImage = require('../../assets/profile-pic.jpeg');
