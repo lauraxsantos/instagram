@@ -1,7 +1,7 @@
 import React from "react";
 import { View, Image, StyleSheet, Text } from "react-native";
 
-export default function Post({profile, username, image, label, like}){
+export default function Post({profile, username, image, label, like, hours}){
     return(
         <View>
             <View style={styles.title}>
@@ -31,7 +31,7 @@ export default function Post({profile, username, image, label, like}){
                 </View>
                 <View>
                     <Text style={{color: 'gray'}}>View all comments</Text>
-                    <Text style={{color: 'gray', fontSize: 12}}>8 hours ago <Text style={{fontWeight: 'bold'}}>º See Translation</Text></Text>
+                    <Text style={{color: 'gray', fontSize: 12}}>{hours} hours ago <Text style={{fontWeight: 'bold'}}>º See Translation</Text></Text>
                 </View>
             </View>
         </View>
